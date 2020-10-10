@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <link rel="icon" href="../e23f9bf1-2ec8-418b-9668-47b5f1be2263.jpg" type="image/icon">
+        <title>Wizard Media-FAQs</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+    }
+
+    .navbar {
+        background-color: #3D7EAA;
+
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: white;
+        font-weight: 600;
+        margin: 10px;
+        padding-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        border-bottom: 1px solid white
+    }
+
+    #starting {
+        margin-top: 70px;
+    }
+
+    #overlay {
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 300px;
+        padding-top: 80px;
+    }
+
+    .line {
+        background: #3D7EAA;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #FFE47A, #3D7EAA);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #FFE47A, #3D7EAA);
+        width: 30px;
+        height: 3px;
+        ;
+    }
+
+    .accordion>.card>.card-header {
+        border-radius: 0;
+        margin-bottom: -1px;
+        background-color: white;
+    }
+
+    .btn:not(:disabled):not(.disabled) {
+        cursor: pointer;
+        color: black;
+        font-weight: 600;
+    }
+
+    .card {
+        box-shadow: 1px 1px 4px 0px #888888;
+    }
+
+    #footer-container {
+        width: 100%;
+        background-color: #3D7EAA;
+        height: 300px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    #footer-para {
+        color: white;
+    }
+
+    #footer-heading {
+        color: white;
+        padding-left: 20px;
+    }
+
+    .helpful-links {
+        padding-left: 25px;
+    }
+
+    .Anchor {
+        color: white;
+    }
+
+    #footer-input {
+        width: 250px;
+        padding: 15px;
+        border: 1px solid black;
+    }
+
+    #footer-btn {
+        width: 100px;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+
+        #starting {
+            margin-top: 50px;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+
+        #starting {
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+
+        #starting {
+            margin-top: 50px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../logo.png" alt="" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./About.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./FAQ.html">FAQ's</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="starting">
+        <div id="overlay">
+            <center>
+                <h1>FAQs</h1>
+                <div class="line"></div><br>
+                <p>Here are some of the most common questions we get.</p>
+            </center>
+        </div>
+    </div><br><br><br>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="card bor">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            What Publications can you get me featured on ?
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        We work with more than 300 publications, from top-tiers like Forbes, Entrepreneur, Yahoo
+                        Finance, MSNBC, to many mid-tier ones as well.
+                    </div>
+                </div>
+            </div><br>
+            <div class="card bor">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How much does your service cost ?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Each package is tailored to best fit the client’s needs. However, we normally work with budgets
+                        of at least $5000.
+                    </div>
+                </div>
+            </div><br>
+            <div class="card bor">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Who is your service for ?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        We typically work with entrepreneurs and executives. However, our services are for anyone who is
+                        looking to grow their brand and be consistent in media because staying current in media is how
+                        you stay current in the world.
+                    </div>
+                </div>
+            </div><br>
+            <div class="card bor">
+                <div class="card-header" id="headingfour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            Why shoul i work with you instead of the competitor ?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        We are able to control the narrative of your story, guarantee placements at half the cost, and
+                        move fast with very quick turnaround times and delivery rates. Plus, we live it every single
+                        day! This is exactly what we did for ourselves, now let us replicate it for you.
+                    </div>
+                </div>
+            </div><br>
+            <div class="card bor">
+                <div class="card-header" id="headingfive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            What is ROI of this service ?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        You get to become a credible, trusted source in your industry, which then opens doors and leads
+                        to opportunities that set you up for success. We position you in such a way where you can demand
+                        more money because you’ll have credibility and a great reputation behind your name. And in this
+                        day and age, reputation is everything.
+                    </div>
+                </div>
+            </div><br><br>
+        </div>
+    </div>
+    <div id="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <img src="../logo.png" alt="" width="100px">
+                    <p id="footer-para">Wizard media s a public relations and communications agency specialised in media
+                        placements, personal branding, and marketing strategy.</p>
+                    <a href="https://www.facebook.com/teamwizardmedia"><i class="fab fa-facebook-square" style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://www.instagram.com/teamwizardmedia/"><i class="fab fa-instagram-square" style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://twitter.com/teamwizardmedia"><i class="fab fa-twitter-square" style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=917877747775&text=&source=&data=&app_absent="><i class="fab fa-whatsapp-square" style="color: white; font-size: 2rem;"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 id="footer-heading">Helpful links</h4>
+                    <div class="helpful-links"><a href="./About.html" class="Anchor">About us</a> </div>
+                    <div class="helpful-links"><a href="./Blog.html" class="Anchor">Blog</a></div>
+                    <div class="helpful-links"><a href="./Service.html"class="Anchor">Services</a> </div>
+                    <div class="helpful-links"><a href="./Contact.html" class="Anchor">contact</a></div>
+                    <div class="helpful-links"><a href="./FAQ.html" class="Anchor">FAQs</a></div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 style="color: white;" id="contact-heading">Contact us</h4>
+                    <p style="color: white;"><i class="fas fa-phone-alt" style="color: white;"></i>+91 7877747775</p>
+                    <p style="color: white;"><i class="fas fa-envelope" style="color: white;"></i>
+                        Teamwizardmedia@gmail.com
+                    </p>
+                    <p style="color: white;"><i class="fas fa-location-arrow" style="color: white;"></i> Tardeo mp mill
+                        compound ganesh bldg b2f mumbai 400034</p>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 style="color: white;">Subscribe Our Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Enter your e-mail address" id="footer-input" required><br>
+                        <button id="footer-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

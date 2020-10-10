@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <link rel="icon" href="../e23f9bf1-2ec8-418b-9668-47b5f1be2263.jpg" type="image/icon">
+    <title>Wizard Media-Contact</title>
+</head>
+<style>
+     .Rights {
+        background-color: #134c73;
+        width: 100%;
+        height: 50px;
+        padding-top: 10px;
+        color: white;
+    }
+    .case-studies-btn {
+        width: 150px;
+        height: 45px;
+        background-color: #3D7EAA;
+        border: 1px solid gray;
+        border-radius: 30px;
+        color: white;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    .navbar {
+        background-color: #3D7EAA;
+
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: white;
+        font-weight: 600;
+        margin: 10px;
+        padding-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        border-bottom: 1px solid white
+    }
+
+    #starting {
+        margin-top: 70px;
+    }
+
+    #overlay {
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 300px;
+        padding-top: 80px;
+    }
+
+    .line {
+        background: #3D7EAA;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #FFE47A, #3D7EAA);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #FFE47A, #3D7EAA);
+        width: 30px;
+        height: 3px;
+        ;
+    }
+
+    .form-container {
+        background-color: #fafafa;
+        width: 100%;
+        height: 600px;
+        padding-top: 50px;
+    }
+
+    .form-input {
+        width: 450px;
+        height: 40px;
+        padding: 25px;
+        border: 1px solid gray;
+    }
+
+    .form-select {
+        width: 450px;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid gray;
+    }
+
+    .area {
+        width: 82%;
+        height: 100px;
+        border: 1px solid gray;
+        padding: 20px;
+    }
+
+    #footer-container {
+        width: 100%;
+        background-color: #3D7EAA;
+        height: 300px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    #footer-para {
+        color: white;
+    }
+
+    #footer-heading {
+        color: white;
+        padding-left: 20px;
+    }
+
+    .helpful-links {
+        padding-left: 25px;
+    }
+
+    .Anchor {
+        color: white;
+    }
+
+    #footer-input {
+        width: 240px;
+        padding: 15px;
+        border: 1px solid black;
+    }
+
+    #footer-btn {
+        width: 100px;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .area {
+            width: 65%;
+        }
+
+        .form-input {
+            margin-bottom: 20px;
+        }
+
+        .form-select {
+            width: 450px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid gray;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            height: 965px;
+        }
+
+        #starting {
+            margin-top: 50px;
+        }
+
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #starting {
+            margin-top: 50px;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+
+        .form-input {
+            margin-bottom: 20px;
+        }
+
+        .form-select {
+            width: 450px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid gray;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            height: 965px;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        #footer-container {
+            height: 800px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+
+        .form-container {
+            height: 965px;
+        }
+
+        #starting {
+            margin-top: 50px;
+        }
+
+        .form-input {
+            width: 300px;
+            height: 40px;
+            padding: 25px;
+            border: 1px solid gray;
+            margin-bottom: 30px;
+        }
+
+        .form-select {
+            width: 300px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid gray;
+            margin-bottom: 20px;
+        }
+    }
+</style>
+
+<body>
+    <div id="starting">
+        <div id="overlay">
+            <center>
+                <h1>Contact us</h1>
+                <div class="line"></div><br>
+                <p>Interested in working with us? We would be happy to set up a call, and discuss how we can help you
+                    take your brand to the next level!</p>
+            </center>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../e23f9bf1-2ec8-418b-9668-47b5f1be2263.jpg" alt="" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./About.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./FAQ.html">FAQ's</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav><br><br>
+    <div class="container" style="margin-bottom: 100px; margin-top: 50px;">
+        <div class="row">
+            <div class="col-lg-3">
+                <h2 style="color: blue;">
+                    Tell us how we can help.
+                </h2>
+            </div>
+            <div class="col-lg-9">
+                <p style="font-weight: 600; margin-top: 10px;">We love to work with individuals and companies who are
+                    looking to use the power of the media to take
+                    their business to the next level. Just book a call with us, and we can discuss about how we can
+                    help.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="container">
+            <center>
+                <h2>Get in touch today to discover what we can do for you</h2>
+                <div class="line"></div>
+            </center><br><br>
+            <center>
+                <form action="mailto:jatinsharma131999@gmail.com" method="POST" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+                    <input type="email" name="email" placeholder="Your Email" class="form-input" required><br><br>
+                    <select required class="form-select" name="Service">
+                        <option value="Which service you are interested in">Which service you are interested in
+                        </option>
+                        <option value="Media Placements">Media Placements</option>
+                        <option value="Contributor Spots">Contributor Spots</option>
+                        <option value="Wikipedia Page Creation">Wikipedia Page Creation</option>
+                        <option value="IMDb Page Creation">IMDb Page Creation</option>
+                        <option value="Google Knowledge Panel Creation">Google Knowledge Panel Creation</option>
+                        <option value="Social Media Verification">Social Media Verification</option>
+                        <option value="Book Publishing">Book Publishing</option>
+                        <option value="Personal Branding Strategy">Personal Branding Strategy</option>
+                        <option value="All of Above">All of Above</option>
+                    </select>
+                    <select class="form-select" required name="Budget">
+                        <option value="What's Your Estimated Budget">What's Your Estimated Budget</option>
+                        <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                        <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                        <option value="$20,000 - $50,000">$20,000 - $50,000</option>
+                        <option value="$50,000 - $100,000">$50,000 - $100,000</option>
+                        <option value="Request Budget Guidance">Request Budget Guidance</option>
+                    </select><br><br>
+                    <input type="text" placeholder="Your Phone(Optional)" class="form-input" name="Phone">
+                    <input type="text" placeholder="Your Company(Optional)" class="form-input" name="Company"><br><br>
+                    <textarea class="area" placeholder="Let us know bit about your project"></textarea><br><br><br>
+                    <button type="submit" class="case-studies-btn">Submit</button>
+                </form>
+            </center>
+        </div>
+    </div><br><br>
+    <div id="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <img src="../e23f9bf1-2ec8-418b-9668-47b5f1be2263.jpg" alt="" width="100px">
+                    <p id="footer-para">Wizard media s a public relations and communications agency specialised in media
+                        placements, personal branding, and marketing strategy.</p>
+                    <a href="https://www.facebook.com/teamwizardmedia"><i class="fab fa-facebook-square"
+                            style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://www.instagram.com/teamwizardmedia/"><i class="fab fa-instagram-square"
+                            style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://twitter.com/teamwizardmedia"><i class="fab fa-twitter-square"
+                            style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=917877747775&text=&source=&data=&app_absent="><i
+                            class="fab fa-whatsapp-square" style="color: white; font-size: 2rem;"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 id="footer-heading">Helpful links</h4>
+                    <div class="helpful-links"><a href="./About.html" class="Anchor">About us</a> </div>
+                    <div class="helpful-links"><a href="./Blog.html" class="Anchor">Blog</a></div>
+                    <div class="helpful-links"><a href="./Service.html" class="Anchor">Services</a> </div>
+                    <div class="helpful-links"><a href="./Contact.html" class="Anchor">contact</a></div>
+                    <div class="helpful-links"><a href="./FAQ.html" class="Anchor">FAQs</a></div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 style="color: white;" id="contact-heading">Contact us</h4>
+                    <p style="color: white;"><i class="fas fa-phone-alt" style="color: white;"></i>+91 7877747775</p>
+                    <p style="color: white;"><i class="fas fa-envelope" style="color: white;"></i>
+                        Teamwizardmedia@gmail.com
+                    </p>
+                    <p style="color: white;"><i class="fas fa-location-arrow" style="color: white;"></i> Tardeo mp mill
+                        compound ganesh bldg b2f mumbai 400034</p>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 style="color: white;">Subscribe Our Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Enter your e-mail address" id="footer-input" required><br>
+                        <button id="footer-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Rights">
+        <div class="container">
+            <p>© 2020 Wizard Media LLC. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <link rel="icon" href="../e23f9bf1-2ec8-418b-9668-47b5f1be2263.jpg" type="image/icon">
+        <title>Wizard Media-Blog</title>
+</head>
+<style>
+     .Rights {
+        background-color: #134c73;
+        width: 100%;
+        height: 50px;
+        padding-top: 10px;
+        color: white;
+    }
+    #footer-container {
+        width: 100%;
+        background-color: #3D7EAA;
+        height: 300px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    #footer-para {
+        color: white;
+    }
+
+    #footer-heading {
+        color: white;
+        padding-left: 20px;
+    }
+
+    .helpful-links {
+        padding-left: 25px;
+    }
+
+    .Anchor {
+        color: white;
+    }
+
+    #footer-input {
+        width: 250px;
+        padding: 15px;
+        border: 1px solid black;
+    }
+
+    #footer-btn {
+        width: 100px;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    .navbar {
+        background-color: #3D7EAA;
+
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: white;
+        font-weight: 600;
+        margin: 10px;
+        padding-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        border-bottom: 1px solid white
+    }
+
+    #starting {
+        margin-top: 70px;
+    }
+
+    #overlay {
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 200px;
+        padding-top: 80px;
+    }
+
+    #blog {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .space {
+        margin-right: 40px;
+    }
+
+    #blog-para {
+        width: 80%;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    #blog-para1 {
+        width: 80%;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .space {
+            margin-right: 17px;
+        }
+
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .space {
+            margin-right: 17px;
+        }
+
+        #blog-para {
+            width: 80%;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        #blog-para1 {
+            width: 80%;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+
+    }
+
+    @media (max-width: 575.98px) {
+        #blog {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #blog-para {
+            width: 80%;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        #blog-para1 {
+            width: 80%;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../e23f9bf1-2ec8-418b-9668-47b5f1be2263.jpg" alt="" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./FAQ.html">FAQ's</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="starting">
+        <div id="overlay">
+            <center>
+                <h1>BLOG</h1>
+                <div class="line"></div><br>
+            </center>
+        </div>
+    </div><br><br><br>
+    <div class="container">
+        <center>
+            <h1 style="color: #3D7EAA">5 Amazing PR Tactics to Boost Sales and Growth</h1>
+        </center>
+    </div>
+    <br><br>
+    <div class="container">
+        <div id="blog">
+            <div class="space">
+                <i class="far fa-clock" style="color: blue;"></i> May 2,2020</div>
+            <div class="space">
+                <i class="far fa-keyboard" style="color: blue;"></i> Nick Cena
+            </div>
+            <div class="space">
+                <i class="far fa-folder-open" style="color: blue;"></i> Uncaterised
+            </div>
+            <div class="space">
+                <i class="far fa-comment" style="color: blue;"></i> No comments
+            </div>
+        </div><br><br>
+        <center><img src="../company images/s14.PNG" alt="" width="80%"><br>
+            <p id="blog-para">We are no longer living in the time where the sole marketing technique of businesses was
+                to advertise through print media. The world has progressed beyond expectations, and digital discoveries
+                are thrown every few days. So, businesses must be flexible and adapt according to the market atmosphere.
+
+                When it comes to promoting your venture, you must have a strong relationship with the public. Activation
+                on all forms of media is the key to attain proximity with your prospective clients. Go for guest
+                columns, social media marketing, seminars, webinars, workshops, and public speaking engagements. Make
+                sure to convey the credibility of your business through these methods.
+
+                Basically, public relations strategies aim to reach marketing goals within a short period. There is a
+                thin line between marketing and public relations. If you succeed in reaching optimal levels of both,
+                there is no way that you will fail to generate a decent number of leads. In a study by USC Annenberg
+                School for Communications and Journalism, nearly half of PR professionals and over 60% of marketing
+                executives were said to believe that public relations and marketing will work together in the future.
+
+                Now that you know how PR is essential for your outreach to the public, you must acknowledge the tactics
+                that will help to boost your sales and growth.</p>
+        </center><br><br>
+        <div id="blog">
+            <div class="space">
+                <i class="far fa-clock" style="color: blue;"></i> May 2,2020</div>
+            <div class="space">
+                <i class="far fa-keyboard" style="color: blue;"></i> Rohit kumar
+            </div>
+            <div class="space">
+                <i class="far fa-folder-open" style="color: blue;"></i> Uncaterised
+            </div>
+            <div class="space">
+                <i class="far fa-comment" style="color: blue;"></i> No comments
+            </div>
+        </div><br><br>
+        <center><img src="../company images/s15.PNG" alt="" width="80%"><br>
+            <p id="blog-para1">Gaining media attention is the goal that you fix for a time when your brand matures. You
+                believe in building a firm foundation initially and then work to acquire media publicity. There is
+                nothing wrong with this approach. Except, the expansion and multi-dimensional media have made it
+                possible to fetch public attention from the start. And as they watch your brand grow, their association
+                with it gets stronger.
+
+                One of the best media you can go for are the major publications. They operate across national
+                boundaries. They have millions of audiences, and there is nothing more an entrepreneur loves than
+                gaining international recognition. Think of how you perceive a brand mentioned in an endorsed press.
+                Your instant reaction is to give them a shot. Right?
+
+                The assumption
+
+                Some entrepreneurs who have just entered the market falsely believe that getting media mentions is not
+                for them. They think only big shots in the business deserve to be on media. It is an entirely wrong
+                concept. If your idea is innovative and tends to provide better solutions to the public, you need to
+                highlight it from the beginning. Let your work make some noise when it is about to bud.</p>
+        </center>
+    </div><br><br>
+    <div id="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <img src="../e23f9bf1-2ec8-418b-9668-47b5f1be2263.jpg" alt="" width="100px">
+                    <p id="footer-para">Wizard media s a public relations and communications agency specialised in media
+                        placements, personal branding, and marketing strategy.</p>
+                    <a href="https://www.facebook.com/teamwizardmedia"><i class="fab fa-facebook-square" style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://www.instagram.com/teamwizardmedia/"><i class="fab fa-instagram-square" style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://twitter.com/teamwizardmedia"><i class="fab fa-twitter-square" style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=917877747775&text=&source=&data=&app_absent="><i class="fab fa-whatsapp-square" style="color: white; font-size: 2rem;"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 id="footer-heading">Helpful links</h4>
+                    <div class="helpful-links"><a href="./About.html" class="Anchor">About us</a> </div>
+                    <div class="helpful-links"><a href="./Blog.html" class="Anchor">Blog</a></div>
+                    <div class="helpful-links"><a href="./Service.html"class="Anchor">Services</a> </div>
+                    <div class="helpful-links"><a href="./Contact.html" class="Anchor">contact</a></div>
+                    <div class="helpful-links"><a href="./FAQ.html" class="Anchor">FAQs</a></div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 style="color: white;" id="contact-heading">Contact us</h4>
+                    <p style="color: white;"><i class="fas fa-phone-alt" style="color: white;"></i>+91 7877747775</p>
+                    <p style="color: white;"><i class="fas fa-envelope" style="color: white;"></i>
+                        Teamwizardmedia@gmail.com
+                    </p>
+                    <p style="color: white;"><i class="fas fa-location-arrow" style="color: white;"></i> Tardeo mp mill
+                        compound ganesh bldg b2f mumbai 400034</p>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 style="color: white;">Subscribe Our Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Enter your e-mail address" id="footer-input" required><br>
+                        <button id="footer-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Rights">
+        <div class="container">
+            <p>© 2020 Wizard Media LLC. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

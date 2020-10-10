@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../New folder/owl.carousel.min.css">
+    <link rel="stylesheet" href="../New folder//owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="e23f9bf1-2ec8-418b-9668-47b5f1be2263.jpg" type="image/icon">
+    <title>Wizard Media</title>
+</head>
+<style>
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+        height: 300px;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    .navbar {
+        background-color: #3D7EAA;
+
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: white;
+        font-weight: 600;
+        margin: 10px;
+        padding-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        border-bottom: 1px solid white
+    }
+
+    .starting {
+        margin-top: 100px;
+    }
+
+    #header-img {
+        vertical-align: middle;
+        border-style: none;
+        float: right;
+        height: 490px;
+        margin: 20px;
+        width: 100%;
+    }
+
+    #header-content {
+        margin-top: 120px;
+        margin-left: 80px;
+    }
+
+    #header-team-content-h2 {
+        color: rgb(15, 134, 170);
+    }
+
+    #header-button {
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+        border: 1px solid grey;
+        background-color: #3D7EAA;
+        color: white;
+        letter-spacing: 2px;
+        box-shadow: 3px 0px 4px 0px #888888;
+    }
+
+    #header-button:hover {
+        background-color: #3D7EAA;
+    }
+
+    .line {
+        background: #3D7EAA;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #FFE47A, #3D7EAA);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #FFE47A, #3D7EAA);
+        width: 30px;
+        height: 3px;
+        ;
+    }
+
+    #companies-img {
+        width: 100%;
+    }
+
+    #seens-container {
+        width: 100%;
+        height: 80px;
+        background-color: #fafafa;
+    }
+
+    .number-card {
+        box-shadow: 1px 1px 4px 0px #888888;
+        border: 0.1px solid black;
+    }
+
+    .numbers {
+        font-size: 30px;
+    }
+
+    .number-container {
+        background-color: #fafafa;
+        width: 100%;
+        height: 500px;
+        padding-top: 40px;
+    }
+
+    .service-para {
+        text-align: justify;
+        font-size: 18px;
+        color: grey;
+    }
+
+    #service-btn {
+        width: 150px;
+        height: 50px;
+        color: white;
+        background-color: #3D7EAA;
+        border: 1px solid grey;
+        border-radius: 30px;
+    }
+
+    #service-btn:hover {
+        box-shadow: 0px 1px 4px 0px #888888;
+    }
+
+    .partner-container {
+        width: 100%;
+        height: 700px;
+        background-color: #fafafa;
+        padding-top: 80px;
+    }
+
+    .case-studies-btn {
+        width: 150px;
+        height: 45px;
+        background-color: #3D7EAA;
+        border: 1px solid gray;
+        border-radius: 30px;
+        color: white;
+    }
+
+    .form-container {
+        background-color: #fafafa;
+        width: 100%;
+        height: 600px;
+        padding-top: 50px;
+    }
+
+    .form-input {
+        width: 450px;
+        height: 40px;
+        padding: 25px;
+        border: 1px solid gray;
+    }
+
+    .form-select {
+        width: 450px;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid gray;
+    }
+
+    .area {
+        width: 82%;
+        height: 100px;
+        border: 1px solid gray;
+        padding: 20px;
+    }
+
+    #footer-container {
+        width: 100%;
+        background-color: #3D7EAA;
+        height: 300px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    #footer-para {
+        color: white;
+    }
+
+    #footer-heading {
+        color: white;
+        padding-left: 20px;
+    }
+
+    .helpful-links {
+        padding-left: 25px;
+    }
+
+    .Anchor {
+        color: white;
+    }
+
+    #footer-input {
+        width: 250px;
+        padding: 15px;
+    }
+
+    #footer-btn {
+        width: 100px;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .starting {
+            margin-top: 0px;
+        }
+
+        #header-team-content-h2 {
+            color: rgb(15, 134, 170);
+            font-size: 24px;
+        }
+
+        #header-team-content-h1 {
+            font-size: 28px;
+        }
+
+        #header-content {
+            margin-top: 120px;
+            margin-left: 20px;
+        }
+
+        .number-card {
+            margin-bottom: 30px;
+        }
+
+        .number-container {
+            height: 750px;
+        }
+
+        #second-image {
+            display: none;
+        }
+
+        #second-image1 {
+            display: none;
+        }
+
+        #second-image2 {
+            display: none;
+        }
+
+        #second-image3 {
+            display: none;
+        }
+
+        .form-container {
+            height: 950px;
+
+        }
+
+        .form-input {
+            margin-bottom: 20px;
+        }
+
+        .form-select {
+            margin-bottom: 20px;
+        }
+
+        .area {
+            width: 65%;
+            height: 150px;
+        }
+
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .starting {
+            margin-top: 0px;
+        }
+
+        #header-content {
+            margin-top: 80px;
+            margin-left: 20px;
+        }
+
+        #header-team-content-h1 {
+            font-size: 28px;
+        }
+
+        #header-img {
+            height: 300px;
+            width: 100%;
+            margin-top: 30px;
+            vertical-align: middle;
+            border-style: none;
+            float: none;
+            animation-name: none;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        #second-image {
+            display: none;
+        }
+
+        #second-image1 {
+            display: none;
+        }
+
+        #second-image2 {
+            display: none;
+        }
+
+        #second-image3 {
+            display: none;
+        }
+
+        .number-card {
+            margin-bottom: 30px;
+        }
+
+        .number-container {
+            height: 1150px;
+        }
+
+        .case-card {
+            margin-bottom: 30px;
+        }
+
+        .form-container {
+            height: 950px;
+
+        }
+
+        .form-input {
+            margin-bottom: 20px;
+        }
+
+        .form-select {
+            margin-bottom: 20px;
+        }
+
+        .area {
+            width: 90%;
+            height: 150px;
+        }
+
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        #first-image {
+            display: none;
+        }
+
+        #first-image1 {
+            display: none;
+        }
+
+        #first-image2 {
+            display: none;
+        }
+
+        #first-image3 {
+            display: none;
+        }
+    }
+
+    /* bigger media queries */
+    @media (min-width: 1200px) {
+        #first-image {
+            display: none;
+        }
+
+        #first-image1 {
+            display: none;
+        }
+
+        #first-image2 {
+            display: none;
+        }
+
+        #first-image3 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        #second-image {
+            display: none;
+        }
+
+        #second-image1 {
+            display: none;
+        }
+
+        #second-image2 {
+            display: none;
+        }
+
+        #second-image3 {
+            display: none;
+        }
+
+        #header-content {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        #header-img {
+            display: none;
+        }
+
+        .number-container {
+            height: 1200px;
+        }
+
+        .number-card {
+            margin-bottom: 30px;
+        }
+
+        #partner-heading {
+            font-size: 25px;
+        }
+
+        .partner-container {
+            padding-top: 40px;
+            height: 500px;
+        }
+
+        #seens-container {
+            padding-top: 31px;
+        }
+
+        .case-card {
+            margin-bottom: 30px;
+        }
+
+        .form-container {
+            height: 950px;
+
+        }
+
+        .form-input {
+            margin-bottom: 10px;
+            width: 300px;
+        }
+
+        .form-select {
+            margin-bottom: 10px;
+            width: 300px;
+        }
+
+        .area {
+            width: 90%;
+            height: 150px;
+        }
+
+        #footer-container {
+            height: 750px;
+            text-align: center;
+        }
+
+        #footer-heading {
+            color: white;
+            margin-top: 10px;
+            padding-left: 0px;
+        }
+
+        .helpful-links {
+            padding-left: 0px;
+        }
+
+        #contact-heading {
+            margin-top: 10px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Pages/Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Pages/About.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Pages/Service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Pages/Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Pages/FAQ.html">FAQ's</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="starting">
+        <div class="row" style="margin: 10px;">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
+                <div id="header-content" data-aos="fade-right" data-aos-duration="2000">
+                    <h1 id="header-team-content-h1">Grow your bussiness with</h1>
+                    <h2 id="header-team-content-h2">Team wizard media</h2>
+                    <br>
+                    <p>Helping Top Entrepreneurs Get the PR To
+                        Become the #1 Authority in Their Industry.</p>
+                    <p>We turn nobodies into celebrities, entrepreneurs into thought leaders,
+                        and ordinary social media users into verified influencers.</p>
+                    <br>
+                    <button id="header-button">Contact us</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
+                <img src="undraw_in_the_office_o44c.svg" id="header-img" data-aos="fade-right" data-aos-duration="2000">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="AS-SEEN">
+        <center>
+            <h3 id="As-seen-heading">As Seen in</h3>
+            <div class="line"></div>
+        </center><br><br>
+        <div id="seens-container">
+            <div class="container">
+                <div id="seen-company">
+                    <img src="company images/Capture1.PNG" alt="" id="companies-img">
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br>
+    </div>
+    <div class="number-container">
+        <div id="Wizard-numbers">
+            <center>
+                <h3 id="what-is-wizard">What is Wizard Media ?</h3>
+                <div class="line"></div>
+            </center><br><br>
+            <div class="container">
+                <p>Wizard Media is a public relations and communications agency that specializes in media placements,
+                    personal branding, and marketing strategy.Our team work with top entrepreneurs, influencers and
+                    established
+                    companies to grow their media presence, build strong brand credibility and boost their business.</p>
+            </div><br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card number-card" data-aos="fade-up" data-aos-duration="2000">
+                            <center><span style="font-size: 4em; color: #3D7EAA;">
+                                    <i class="fas fa-users"></i>
+                                </span>
+                                <div class="numbers">400+</div>
+                                <div>Happy Clients</div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card number-card" data-aos="fade-up" data-aos-duration="2000">
+                            <center><span style="font-size: 4em; color: #3D7EAA;">
+                                    <i class="fas fa-tv"></i>
+                                </span>
+                                <div class="numbers">800+</div>
+                                <div>Media Oulets</div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card number-card" data-aos="fade-up" data-aos-duration="2000">
+                            <center><span style="font-size: 4em; color: #3D7EAA;">
+                                    <i class="fas fa-window-maximize"></i>
+                                </span>
+                                <div class="numbers">1000+</div>
+                                <div>Articles Published</div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card number-card" data-aos="fade-up" data-aos-duration="2000">
+                            <center><span style="font-size: 4em; color: #3D7EAA;">
+                                    <i class="fas fa-medal"></i>
+                                </span>
+                                <div class="numbers">100%</div>
+                                <div>Satisfaction guaranteed</div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="services">
+        <div class="container">
+            <center>
+                <h1>From Forbes features to Wikipedia page creation, we provide a range of unique services</h1>
+                <div class="line"></div><br><br>
+            </center><br><br>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Media Placements</h2><br>
+                    <p class="service-para">Our strong network of connections with journalists, writers and editors at
+                        more than 300+ major
+                        media outlets allows us to strategically get our clients featured. Over the years, our clients
+                        have been featured on some of the world’s biggest and most renowned publications. They have gone
+                        on to build strong personal brands, and they have been strategically positioned as leaders in
+                        their industries. So, whether you need a full-feature on Forbes, or you need press features to
+                        get verified on social media, we have got you covered.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s1.PNG" alt=""></div>
+            </div>
+            <br><br><br><br>
+            <!-- Middle level showing -->
+            <div class="row" id="first-image">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Contributor spots</h2><br>
+                    <p class="service-para">Months of testing has allowed us to crack the code and figure out the exact
+                        strategies that can be used to secure contributor spots on some of the world’s leading
+                        publications. We have the ability to take a person with absolutely zero authority, and get them
+                        published on major publications including Forbes, Entrepreneur, Inc. Magazine, and more. We do
+                        this by strategically building up their writing portfolio, getting them on a bunch of smaller
+                        publication, and then using that as leverage to pitch the biggest ones</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s2.PNG" alt=""></div>
+            </div><br><br><br><br>
+            <!-- Middle level showing -->
+            <div class="row" id="second-image">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s2.PNG" alt="">
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Contributor spots</h2><br>
+                    <p class="service-para">Months of testing has allowed us to crack the code and figure out the exact
+                        strategies that can be used to secure contributor spots on some of the world’s leading
+                        publications. We have the ability to take a person with absolutely zero authority, and get them
+                        published on major publications including Forbes, Entrepreneur, Inc. Magazine, and more. We do
+                        this by strategically building up their writing portfolio, getting them on a bunch of smaller
+                        publication, and then using that as leverage to pitch the biggest ones.</p>
+                </div>
+            </div><br><br><br><br>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Wikipedia Page Creation</h2><br>
+                    <p class="service-para">Wikipedia is one of the most popular websites in the world, and it holds
+                        some prime real estate on Google’s search results page, and usually, Wikipedia always shows up
+                        in top 5 search results for any specific keyword. Almost every renowned brand in the world has a
+                        Wikipedia page. Wikipedia is also a trigger for Google knowledge panel creation. Imagine the
+                        credibility, exposure, and authority you would have if you were on Wikipedia. Our Wikipedia
+                        experts are skilled in creating permanent Wikipedia pages that stick.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s3.PNG" alt=""></div>
+            </div><br><br><br><br>
+            <!-- Middle level showing -->
+            <div class="row" id="first-image1">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>IMDb Page Creation</h2><br>
+                    <p class="service-para">IMDb is one of the oldest websites on the internet, and everyone is familiar
+                        with it. It’s a place reserved exclusively for celebrities, and people who are famous in any
+                        respective field, whether it’s acting, or direction, or music composition. Over the years, we
+                        have mastered the art of IMDb page creation. Whether you’re an aspiring actor, or an upcoming
+                        musician, or simply a digital marketing expert, we have the skills to get you a full-fledge IMDb
+                        page. It ranks high on Google, and it will take your brand credibility to the next level.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s4.PNG" alt=""></div>
+            </div><br><br><br><br>
+            <!-- Middle level showing -->
+            <div class="row" id="second-image1">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s4.PNG" alt="">
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>
+                        IMDb Page Creation</h2><br>
+                    <p class="service-para">IMDb is one of the oldest websites on the internet, and everyone is familiar
+                        with it. It’s a place reserved exclusively for celebrities, and people who are famous in any
+                        respective field, whether it’s acting, or direction, or music composition. Over the years, we
+                        have mastered the art of IMDb page creation. Whether you’re an aspiring actor, or an upcoming
+                        musician, or simply a digital marketing expert, we have the skills to get you a full-fledge IMDb
+                        page. It ranks high on Google, and it will take your brand credibility to the next level.</p>
+                </div>
+            </div><br><br><br>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Google Knowledge Panel Creation</h2><br>
+                    <p class="service-para">Have you seen the panel that shows up on the right side of Google search
+                        results when you search “Bill Gates” or “Nike”? That’s called the Google knowledge panel. Only
+                        the biggest brands and the most famous people in the world are able to get that coveted panel.
+                        Imagine how much your authority and credibility would go up if you could just tell your clients
+                        to Google your name and a panel shows up on the right side. Our experts have discovered the key
+                        secrets that lead to panel creation, and this allows us to create panels for our clients.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s5.PNG" alt=""></div>
+            </div><br><br><br><br>
+            <!-- Middle level showing -->
+            <div class="row" id="first-image2">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Social Media Verification</h2><br>
+                    <p class="service-para">Ever dreamed of getting that blue check mark on Facebook or Instagram? Who
+                        hasn’t. That blue check mark is not just a simple tick. It’s a sign of credibility, authority
+                        and influence. Only the most renowned brands and influencers are able to get that coveted blue
+                        check mark. And once they do get it, they find that their business goes to a whole other level.
+                        We are able to leverage our contacts at Facebook and Instagram to get accounts verified for our
+                        clients. However, you need to be eligible first, and that requires press.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s6.PNG" alt=""></div>
+            </div><br><br><br><br>
+            <!-- Middle level showing -->
+            <div class="row" id="second-image2">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s6.PNG" alt="">
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Social Media Verification</h2><br>
+                    <p class="service-para">Ever dreamed of getting that blue check mark on Facebook or Instagram? Who
+                        hasn’t. That blue check mark is not just a simple tick. It’s a sign of credibility, authority
+                        and influence. Only the most renowned brands and influencers are able to get that coveted blue
+                        check mark. And once they do get it, they find that their business goes to a whole other level.
+                        We are able to leverage our contacts at Facebook and Instagram to get accounts verified for our
+                        clients. However, you need to be eligible first, and that requires press.</p>
+                </div>
+            </div><br><br><br>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Book Publishing</h2><br>
+                    <p class="service-para">Being a published author can have a huge impact on your personal brand.
+                        Often times, being a published author is a sign that you’re an expert authority in your niche.
+                        For example, if you’re a digital marketing specialist, getting a book published about digital
+                        marketing under your name will position you as a thought leader in your industry. You can
+                        leverage the published books to book paid speaking engagements, corporate consulting gigs, and
+                        much more. It can also help you close big contracts, and boost business revenue. Our team can
+                        take care of the entire process for you, from content ideation, to writing, to getting the book
+                        published.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s7.PNG" alt=""></div>
+            </div><br><br><br><br>
+            <!-- Middle level showing -->
+            <div class="row" id="first-image3">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Personal Branding Strategy</h2><br>
+                    <p class="service-para">Is your personal brand practically non-existent? Does nothing about you show
+                        up when people Google your name? Are you finding it difficult to close deals or expand your
+                        business, because people don’t think you’re credible enough? That means its time you build a
+                        personal brand for yourself. Our team of experts can take care of everything, from building your
+                        personal brand strategy, to actually executing and implementing it. We can take you from being a
+                        nobody to being a person of influence in your industry.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s8.PNG" alt=""></div>
+            </div><br><br><br><br>
+            <!-- middle level showing -->
+            <div class="row" id="second-image3">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="company images/s8.PNG" alt="">
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2>Personal Branding Strategy</h2><br>
+                    <p class="service-para">Is your personal brand practically non-existent? Does nothing about you show
+                        up when people Google your name? Are you finding it difficult to close deals or expand your
+                        business, because people don’t think you’re credible enough? That means its time you build a
+                        personal brand for yourself. Our team of experts can take care of everything, from building your
+                        personal brand strategy, to actually executing and implementing it. We can take you from being a
+                        nobody to being a person of influence in your industry.</p>
+                </div>
+            </div><br><br><br><br>
+            <center><button id="service-btn">See All</button></center>
+            <br><br>
+        </div>
+    </div>
+    <br><br>
+    <div class="partner-container">
+        <div class="container">
+            <center>
+                <h1 id="partner-heading">
+                    Our Clients Are Consistently Featured On Some Of
+                    The Most Elite Publications
+                </h1>
+                <div class="line"></div>
+            </center><br><br>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/clogo2.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/clogo4.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/clogo5.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/clogo12.png" alt="">
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/business-insider-logo-small-1.png"
+                        alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/clogo6.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/tnw.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/clogo7.png" alt="">
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/clogo8.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/clogo9.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/thrive-global-1.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/clogo10.png" alt="">
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/wired.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/Adweek_logo.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/fastc.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-3">
+                    <img src="https://mogulpress.com/wp-content/uploads/2019/12/bloomberg-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br>
+    </div>
+    <div class="case-studies">
+        <div class="container">
+            <center>
+                <h1>The Team</h1>
+                <div class="line"></div>
+            </center><br><br>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card case-card" data-aos="flip-left" style="height: 540px;">
+                        <img class="card-img-top" src="./company images/p2.jpg" alt="Card image cap">
+                        <center>
+                            <div class="card-body">
+                                <h5 class="card-title">Aditya Belnekar</h5>
+                                <p>Founder & CEO</p>
+                                <p class="card-text">You don’t need to be a genius or a visionary, or even a college
+                                    graduate for that matter, to be successful. You just need a framework and a dream.
+                                </p>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card case-card" data-aos="flip-left">
+                        <img class="card-img-top" src="company images/p3.jpg" alt="Card image cap">
+                        <center>
+                            <div class="card-body">
+                                <h5 class="card-title">Hetvi Karia</h5>
+                                <p>Co- Founder</p>
+                                <p class="card-text">Not stopping until I achieve all my dreams.I love the
+                                    entrepreneur I look at when I am looking into the mirror.I will make
+                                    Teamwizardmedia shine and make it reach the heights of success.</p>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card case-card" style="height: 540px;" data-aos="flip-left">
+                        <img class="card-img-top" src="company images/P1.jpg" alt="Card image cap">
+                        <center>
+                            <div class="card-body">
+                                <h5 class="card-title">Chirag Pardesi</h5>
+                                <p>Director</p>
+                                <p class="card-text">It is not the strongest species that survive, nor the most
+                                    intelligent, but the most responsive to change</p>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="form-container">
+        <div class="container">
+            <center>
+                <h2>Get in touch today to discover what we can do for you</h2>
+                <div class="line"></div>
+            </center><br><br>
+            <center>
+                <form action="mailto:jatinsharma131999@gmail.com" method="POST" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+                    <input type="email" name="email" placeholder="Your Email" class="form-input" required><br><br>
+                    <select required class="form-select" name="Service">
+                        <option value="Which service you are interested in">Which service you are interested in
+                        </option>
+                        <option value="Media Placements">Media Placements</option>
+                        <option value="Contributor Spots">Contributor Spots</option>
+                        <option value="Wikipedia Page Creation">Wikipedia Page Creation</option>
+                        <option value="IMDb Page Creation">IMDb Page Creation</option>
+                        <option value="Google Knowledge Panel Creation">Google Knowledge Panel Creation</option>
+                        <option value="Social Media Verification">Social Media Verification</option>
+                        <option value="Book Publishing">Book Publishing</option>
+                        <option value="Personal Branding Strategy">Personal Branding Strategy</option>
+                        <option value="All of Above">All of Above</option>
+                    </select>
+                    <select class="form-select" required name="Budget">
+                        <option value="What's Your Estimated Budget">What's Your Estimated Budget</option>
+                        <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                        <option value="$10,000 - $20,000">$10,000 - $20,000</option>
+                        <option value="$20,000 - $50,000">$20,000 - $50,000</option>
+                        <option value="$50,000 - $100,000">$50,000 - $100,000</option>
+                        <option value="Request Budget Guidance">Request Budget Guidance</option>
+                    </select><br><br>
+                    <input type="text" placeholder="Your Phone(Optional)" class="form-input" name="Phone">
+                    <input type="text" placeholder="Your Company(Optional)" class="form-input" name="Company"><br><br>
+                    <textarea class="area" placeholder="Let us know bit about your project"></textarea><br><br><br>
+                    <button type="submit" class="case-studies-btn">Submit</button>
+                </form>
+            </center>
+        </div>
+    </div><br><br>
+    <div id="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <img src="logo.png" alt="" width="100px">
+                    <p id="footer-para">Wizard media s a public relations and communications agency specialised in media
+                        placements, personal branding, and marketing strategy.</p>
+                    <a href="https://www.facebook.com/teamwizardmedia"><i class="fab fa-facebook-square"
+                            style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://www.instagram.com/teamwizardmedia/"><i class="fab fa-instagram-square"
+                            style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://twitter.com/teamwizardmedia"><i class="fab fa-twitter-square"
+                            style="color: white; font-size: 2rem;"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=917877747775&text=&source=&data=&app_absent="><i
+                            class="fab fa-whatsapp-square" style="color: white; font-size: 2rem;"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 id="footer-heading">Helpful links</h4>
+                    <div class="helpful-links"><a href="./Pages/About.html" class="Anchor">About us</a> </div>
+                    <div class="helpful-links"><a href="./Pages/Blog.html" class="Anchor">Blog</a></div>
+                    <div class="helpful-links"><a href="./Pages/Service.html" class="Anchor">Services</a> </div>
+                    <div class="helpful-links"><a href="./Pages/Contact.html" class="Anchor">contact</a></div>
+                    <div class="helpful-links"><a href="./Pages/FAQ.html" class="Anchor">FAQs</a></div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 style="color: white;" id="contact-heading">Contact us</h4>
+                    <p style="color: white;"><i class="fas fa-phone-alt" style="color: white;"></i>+91 7877747775</p>
+                    <p style="color: white;"><i class="fas fa-envelope" style="color: white;"></i>
+                        Teamwizardmedia@gmail.com
+                    </p>
+                    <p style="color: white;"><i class="fas fa-location-arrow" style="color: white;"></i> Tardeo mp mill
+                        compound ganesh bldg b2f mumbai 400034</p>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-12">
+                    <h4 style="color: white;">Subscribe Our Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Enter your e-mail address" id="footer-input" required><br>
+                        <button id="footer-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+<script src="../New folder/owl.carousel.min.js"></script>
+<script>
+    AOS.init();
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script>
+
+</html>
